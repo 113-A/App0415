@@ -217,7 +217,7 @@ fun DrinkButton(
 
     Card(
         modifier = Modifier
-            .width(120.dp)
+            .width(115.dp)
             .clickable { onClick(name) },
         shape = RoundedCornerShape(12.dp),
         border =
@@ -234,7 +234,7 @@ fun DrinkButton(
                 contentDescription = name,
                 modifier = Modifier
                     .fillMaxWidth()
-                    .height(120.dp),
+                    .height(155.dp),
                 contentScale = ContentScale.Crop
             )
 
@@ -245,7 +245,7 @@ fun DrinkButton(
                 fontWeight = FontWeight.Bold,
                 modifier = Modifier
                     .align(Alignment.BottomCenter)
-                    .offset(y = (-1).dp) // ⭐ 往上移一點（數值可調）
+                    .offset(y = (-3).dp) // ⭐ 往上移一點（數值可調）
                     .background(
                         Color.White.copy(alpha = 0.85f),
                         shape = RoundedCornerShape(6.dp)
